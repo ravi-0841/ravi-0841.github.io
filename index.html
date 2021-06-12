@@ -43,7 +43,7 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm interested in supervised learning, graphical modeling, and signal processing.
+                I'm interested in un/supervised learning, graphical modeling, and signal processing.
                 My research is mainly about understanding and manipulating factors behind emotion perception in human speech.
                 Here are the papers that I have published in the conferences/journals or are currently under review:
               </p>
@@ -74,27 +74,16 @@
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
               <a href="https://ibrnet.github.io/">
-                <papertitle>IBRNet: Learning Multi-View Image-Based Rendering</papertitle>
+                <papertitle>A Deep-Bayesian Framework for Adaptive Speech Duration Modification</papertitle>
               </a>
               <br>
-              <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a>,
-              <a href="https://www.linkedin.com/in/zhicheng-wang-96116897/">Zhicheng Wang</a>,
-              <a href="https://www.kylegenova.com/">Kyle Genova</a>,
-              <a href="https://people.eecs.berkeley.edu/~pratul/">Pratul Srinivasan</a>,
-              <a href="https://scholar.google.com/citations?user=Rh9T3EcAAAAJ&hl=en">Howard Zhou</a>, <br>
-              <strong>Jonathan T. Barron</strong>, 
-              <a href="http://www.ricardomartinbrualla.com/">Ricardo Martin-Brualla</a>,
-              <a href="https://www.cs.cornell.edu/~snavely/">Noah Snavely</a>, 
-              <a href="https://www.cs.princeton.edu/~funk/">Thomas Funkhouser</a>
+              <strong>Ravi Shankar</strong>, 
+              Dr. Archana Venkataraman
               <br>
-              <em>CVPR</em>, 2021
+              <em>Under Review</em>
               <br>
-              <a href="https://ibrnet.github.io/">project page</a> /
-              <a href="https://github.com/googleinterns/IBRNet">code</a> / 
-              <a href="https://arxiv.org/abs/2102.13090">arXiv</a>
-              <p></p>
-              <p>By learning how to pay attention to input images at render time, 
-                  we can amortize inference for view synthesis and reduce error rates by 15%.</p>
+              <a href="https://github.com/ravi-0841/pytorch-speech-transformer">code</a>
+              <p>We propose the first method to adaptively modify the duration of a given speech signal. Our approach uses a Bayesian framework to define a latent attention map that links frames of the input and target utterances. We train a masked convolutional encoder-decoder network to produce this attention map via a stochastic version of the mean absolute error loss function; our model also predicts the length of the target speech signal using the encoder embeddings. The predicted length determines the number of steps for the decoder operation. During inference, we  generate the attention map as a proxy for the similarity matrix between the given input speech and an unknown target speech signal. Using this similarity matrix, we compute a warping path of alignment between the two signals. Our experiments demonstrate that this adaptive framework produces similar results to dynamic time warping, which relies on a known target signal, on both voice conversion and emotion conversion tasks. We also show that our technique results in a high quality of generated speech that is on par with state-of-the-art vocoders.</p>
             </td>
           </tr>
 
