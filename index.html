@@ -271,6 +271,44 @@
             </td>
           </tr>
 
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='momenta_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/momenta_hnet.png" type="image/jpeg">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/momenta_hnet.png' width="180" height="100">
+              </div>
+              <script type="text/javascript">
+                function nerv_start() {
+                  document.getElementById('momenta_image').style.opacity = "1";
+                }
+
+                function nerv_stop() {
+                  document.getElementById('momenta_image').style.opacity = "0";
+                }
+                nerv_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="">
+                <papertitle>Automated Emotion Morphing in Speech Based on Diffeomorphic Curve Registration and Highway Networks</papertitle>
+              </a>
+              <br>
+              <strong>Ravi Shankar</strong>,
+              <a href="https://scholar.google.com/citations?hl=en&user=oIySxE4AAAAJ">Hsi-Wei Hsieh</a>,
+              <a href="https://scholar.google.com/citations?user=344v9UwAAAAJ&hl=en">Nicolas Charon</a>,
+              Archana Venkataraman
+              <br>
+              <em>Interspeech</em>, 2019
+              <br>
+              <a href="https://plmlab.math.cnrs.fr/benjamin.charlier/fshapesTk">code</a>
+              <p></p>
+              <p>We use diffeomorphic registration to model the target emotion F0 contour. It serves as a regularization technique for better target F0 range approximation.</p>
+            </td>
+          </tr>
+
         </tbody></table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
