@@ -309,6 +309,41 @@
             </td>
           </tr>
 
+          <tr onmouseout="nerv_stop()" onmouseover="nerv_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='keyword_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/spoken_keyword.png" type="image/jpeg">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/spoken_keyword.png' width="180" height="100">
+              </div>
+              <script type="text/javascript">
+                function nerv_start() {
+                  document.getElementById('keyword_image').style.opacity = "1";
+                }
+
+                function nerv_stop() {
+                  document.getElementById('keyword_image').style.opacity = "0";
+                }
+                nerv_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://www.isca-speech.org/archive/Interspeech_2018/abstracts/1436.html">
+                <papertitle>Spoken Keyword Detection Using Joint DTW-CNN</papertitle>
+              </a>
+              <br>
+              <strong>Ravi Shankar</strong>,
+              Vikram C.M, S.R.M Prasanna
+              <br>
+              <em>Interspeech</em>, 2018
+              <br>
+              <p></p>
+              <p>In this paper, we propose a randomized DTW method coupled with convolutional network to identify presence/absence of a keyword.</p>
+            </td>
+          </tr>
+
         </tbody></table>
 
         <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20"><tbody>
