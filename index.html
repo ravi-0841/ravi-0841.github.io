@@ -100,6 +100,40 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='nnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/neural_net.jpg" type="image/jpg">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/neural_net.jpg' width="180" height="120">
+              </div>
+              <script type="text/javascript">
+                function ibrnet_start() {
+                  document.getElementById('nnet_image').style.opacity = "1";
+                }
+
+                function ibrnet_stop() {
+                  document.getElementById('nnet_image').style.opacity = "0";
+                }
+                ibrnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Adaptive Duration Modification of Speech using Masked Convolutional Networks and Open-Loop Time Warping</papertitle>
+              <br>
+              <strong>Ravi Shankar</strong>, 
+              Archana Venkataraman
+              <br>
+              <em>ISCA SSW12, 2023</em>
+              <br>
+              <a href="https://github.com/ravi-0841/pytorch-speech-transformer">code</a> / 
+              <a href="https://openreview.net/pdf?id=fp3SnAbc15">OpenReview</a>
+              <p>We propose the first method to adaptively modify the duration of a given speech signal. Our approach uses a Bayesian framework to define a latent attention map that links frames of the input and target utterances.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nnet_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/recognition_models.png" type="image/jpg">
                 Your browser does not support the video tag.
                 </video></div>
@@ -126,40 +160,6 @@
               <br>
               <a href="https://arxiv.org/abs/2211.05047">arXiv</a>
               <p>We comprehensively study different types of data augmentation procedures in the context of speech emotion recognition. Our study spans multiple neural architectures and datasets for an unbiased comparison.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='nnet_image'><video  width=100% height=100% muted autoplay loop>
-                <source src="images/neural_net.jpg" type="image/jpg">
-                Your browser does not support the video tag.
-                </video></div>
-                <img src='images/neural_net.jpg' width="180" height="120">
-              </div>
-              <script type="text/javascript">
-                function ibrnet_start() {
-                  document.getElementById('nnet_image').style.opacity = "1";
-                }
-
-                function ibrnet_stop() {
-                  document.getElementById('nnet_image').style.opacity = "0";
-                }
-                ibrnet_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <papertitle>Adaptive Duration Modification of Speech using Masked Convolutional Networks and Open-Loop Time Warping</papertitle>
-              <br>
-              <strong>Ravi Shankar</strong>, 
-              Archana Venkataraman
-              <br>
-              <em>ISCA SSW12, 2023</em>
-              <br>
-              <a href="https://github.com/ravi-0841/pytorch-speech-transformer">code</a> / 
-              <a href="https://arxiv.org/abs/2107.04973">arXiv</a>
-              <p>We propose the first method to adaptively modify the duration of a given speech signal. Our approach uses a Bayesian framework to define a latent attention map that links frames of the input and target utterances.</p>
             </td>
           </tr>
 
