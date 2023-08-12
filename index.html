@@ -33,7 +33,7 @@
               <p>I am currently a PhD candidate in the department of ECE at <a href="https://engineering.jhu.edu/ece/">Johns Hopkins University</a>, where I work on Speech signal processing.
               </p>
               <p>
-                At JHU, I've primarily worked on emotion conversion in speech in the context of expressive speech synthesis. My work lies in the intersection of speech signal processing, statistical modeling, and deep learning. I am currently advised by <a href="https://scholar.google.com/citations?user=dDtlmCAAAAAJ&hl=en">Dr. Archana Venkataraman</a> (head, <a href="https://engineering.jhu.edu/nsa/">NSA Lab</a>, JHU). I did my undergraduate in Electronics and Electrical Engineering at <a href="https://www.iitg.ac.in/">IIT Guwahati</a> where I worked on Keyword spotting for low-resourced languages supervised by <a href="https://scholar.google.co.in/citations?user=gakbTtAAAAAJ&hl=en">Dr. S.R.M Prasanna</a>. I've been the receipient of <a href="https://engineering.jhu.edu/ece/2021/02/15/three-ece-students-named-minds-fellows-for-spring-semester/">MINDS fellowship award</a> twice for working on the frontiers of machine learning and data science. I have also received ECE graduate fellowship at JHU and <a href="https://www.daad.de/en/">DAAD-WISE</a> fellowship award in the past for doing research internship in Germany. I am currently on the job market for ML researcher roles in audio and text. 
+                At JHU, I've primarily worked on generative modeling of prosody for expressive/emotional speech synthesis. My work lies in the intersection of speech signal processing, statistical modeling, and deep learning. I am currently advised by <a href="https://scholar.google.com/citations?user=dDtlmCAAAAAJ&hl=en">Dr. Archana Venkataraman</a> (head, <a href="https://engineering.jhu.edu/nsa/">NSA Lab</a>, JHU). I did my undergraduate in Electronics and Electrical Engineering at <a href="https://www.iitg.ac.in/">IIT Guwahati</a> where I worked on Keyword spotting for low-resourced languages supervised by <a href="https://scholar.google.co.in/citations?user=gakbTtAAAAAJ&hl=en">Dr. S.R.M Prasanna</a>. During the course of my PhD, I received my masters degree in Applied Math and Statistics at JHU. I've been the receipient of <a href="https://engineering.jhu.edu/ece/2021/02/15/three-ece-students-named-minds-fellows-for-spring-semester/">MINDS fellowship award</a> twice for working on the frontiers of machine learning and data science. I have also received ECE graduate fellowship at JHU and <a href="https://www.daad.de/en/">DAAD-WISE</a> fellowship award in the past for doing research internship in Germany. I am currently on the job market for ML researcher roles in audio and text. 
               </p>
               <p style="text-align:center">
                 <a href="mailto:ravishankar0841@gmail.com">Email</a> &nbsp/&nbsp
@@ -54,13 +54,48 @@
               <heading>Research</heading>
               <p>
                 I'm interested in un/supervised learning, graphical modeling, and signal processing.
-                My research is mainly about understanding and manipulating factors behind emotion perception in human speech.
+                My research is mainly about understanding and manipulating prosodic information to alter emotion perception in human speech.
                 Here are the papers that I have published in the conferences/journals or are currently under review:
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/GCRN_model_exteneded_2-1.png" type="image/jpg">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/recognition_models.png' width="150" height="80">
+              </div>
+              <script type="text/javascript">
+                function ibrnet_start() {
+                  document.getElementById('nnet_image').style.opacity = "1";
+                }
+
+                function ibrnet_stop() {
+                  document.getElementById('nnet_image').style.opacity = "0";
+                }
+                ibrnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>A Closer Look at Wav2Vec2 Embeddings for On-device Single-channel Speech Enhancement</papertitle>
+              <br>
+              <strong>Ravi Shankar</strong>, 
+              Ke Tan,
+              Buye Xu,
+              Anurag Kumar
+              <br>
+              <em>Under Submisison</em>
+              <br>
+              <a href="https://arxiv.org/abs/2211.05047">arXiv</a>
+              <p>In this work, we proposed different ways of using Wav2Vec2 embeddings for single channel speech enhancement. Our study shows that in a constrained (low-memory/poor SNR/causality) settings, SSL embeddings fail to provide helpful information to improve enhancement task.</p>
+            </td>
+          </tr>
 
           <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -89,8 +124,6 @@
               Abdouh Harouna,
               Arjun Somayazulu,
               Archana Venkataraman
-              <br>
-              <em>Under Submisison</em>
               <br>
               <a href="https://arxiv.org/abs/2211.05047">arXiv</a>
               <p>We comprehensively study different types of data augmentation procedures in the context of speech emotion recognition. Our study spans multiple neural architectures and datasets for an unbiased comparison.</p>
