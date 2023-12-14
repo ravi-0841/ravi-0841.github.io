@@ -66,6 +66,38 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='nnet_image'><video  width=100% height=100% muted autoplay loop>
+                <source src="images/prosodic_features-1.png" type="image/jpg">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/prosodic_features-1.png' width="150" height="80">
+              </div>
+              <script type="text/javascript">
+                function ibrnet_start() {
+                  document.getElementById('nnet_image').style.opacity = "1";
+                }
+
+                function ibrnet_stop() {
+                  document.getElementById('nnet_image').style.opacity = "0";
+                }
+                ibrnet_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <papertitle>Manipulating Emotions: Generative Modeling of Prosody for Emotional Speech Synthesis </papertitle>
+              <br>
+              <strong>Ravi Shankar</strong>
+              <br>
+              <em>Johns Hopkins University</em>
+              <br>
+              <a href="data/Johns_Hopkins_University_Thesis.pdf">Paper</a>
+              <p>In this thesis, we proposed different ways of learning appropriate prosody modeling techniques for injecting emotion into neutral speech. We develop supervised algorithms first and their unsupervised counterpart by combining probabilistic graphical modeling with neural network as density function estimators.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="ibrnet_stop()" onmouseover="ibrnet_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='nnet_image'><video  width=100% height=100% muted autoplay loop>
                 <source src="images/GCRN_model_extended_2-1.png" type="image/jpg">
                 Your browser does not support the video tag.
                 </video></div>
